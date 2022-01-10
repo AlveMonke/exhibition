@@ -133,6 +133,7 @@ function clearAll() {
 }
 
 function doneMove() {
+    console.log(toLocation, fromLocation);
     let modeSelected = document.querySelector(".selected");
 
     if (
@@ -155,6 +156,6 @@ function doneMove() {
             let link = document.createElement("a");
             link.href = "../map_page/index.html";
             link.click();
-        }, 500);
+        }, 20000);
     }
 }
