@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <h1>Let's get your trip started!</h1>
+        <h6>Please enter the following details</h6>
+
+        <div class="containerContainer">
+            <div id="containerconta">
+                <div id="container1" class="container">
+                    <p>Enter your path</p>
+
+                    <div class="inputContain">
+                        <input
+                            spellcheck="false"
+                            type="text"
+                            id="startPlace"
+                            placeholder="Start Location"
+                            list="placeList1"
+                        />
+                        <input
+                            spellcheck="false"
+                            type="text"
+                            id="endPlace"
+                            placeholder="End Location"
+                            list="placeList2"
+                        />
+                    </div>
+                </div>
+
+                <div id="container2" class="container">
+                    <p>Travel Mode</p>
+                    <div class="innerContainer radio-group">
+                        <div id="car" class="icon radio selected">
+                            <!-- <br /> -->
+                            <i class="fas fa-car-side"></i>
+                            <br />
+                            <h1>car</h1>
+                        </div>
+                        <div id="cycle" class="icon radio">
+                            <i class="fas fa-bicycle"></i>
+                            <br />
+                            <h1>cycle</h1>
+                        </div>
+                        <div id="truck" class="icon radio">
+                            <i class="fas fa-truck"></i>
+                            <br />
+                            <h1>truck</h1>
+                        </div>
+                        <div id="walk" class="icon radio">
+                            <i class="fas fa-walking"></i>
+                            <br />
+                            <h1>walk</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonBtnContainer">
+            <div class="buttonContainer">
+                <button
+                    style="
+                        background: #69bc8a;
+                        border-radius: 17.2016px;
+                        border: none;
+                        color: white;
+                    "
+                    onclick="clearAll()"
+                >
+                    Clear
+                </button>
+                <button
+                    style="
+                        background: #7079b8;
+                        border-radius: 17.2016px;
+                        border: none;
+                        color: white;
+                    "
+                    onclick="doneMove()"
+                >
+                    Done
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

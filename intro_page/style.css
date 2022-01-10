@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    overflow: hidden;
+}
+
+.containerContainer {
+    position: relative;
+}
+
+#containerconta {
+    position: absolute;
+    top: 5vh;
+    /* transform: translate(0, -25vh); */
+}
+
+.containerContainer .container {
+    margin: 1.4vh 4vw;
+}
+
+h1 {
+    padding: 10vw 0 2vw;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 5.5vw;
+    line-height: 3.5vh;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+h6 {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 3.5vw;
+    line-height: 17px;
+    text-align: center;
+    color: #7d7d7d;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    margin: auto;
+    width: 92vw;
+    /* height: 24.7vh; */
+    background: #f5f7ff;
+    border-radius: 15.2622px;
+}
+
+#container1 p {
+    font-family: "Poppins";
+    font-size: 3.8vw;
+    line-height: 19px;
+    color: #6c6c6c;
+    padding: 3vh 0 6% 6%;
+    /* text-transform: uppercase; */
+}
+
+#innerContainer {
+    margin: auto;
+    width: 88%;
+    height: 81px;
+    background: #69bc8a;
+    border-radius: 15.2px;
+    /* padding-bottom: 1000px; */
+}
+
+#container1 input {
+    display: block;
+    margin: auto;
+    width: 88%;
+    height: 25%;
+    background: #69bc8a;
+    padding: 20px;
+    outline: none;
+    font-family: Poppins;
+    font-size: 3.5vw;
+    line-height: 16px;
+    color: white;
+}
+
+/* #container1 input:last-child {
+} */
+
+#container1 input::placeholder {
+    font-weight: 300;
+    color: rgb(243, 243, 243);
+}
+
+#startPlace {
+    border: none;
+    border-radius: 20px 20px 0 0;
+}
+
+#endPlace {
+    border: none;
+    border-top: solid 2px white;
+    border-radius: 0 0 20px 20px;
+}
+
+.inputContain {
+    padding-bottom: 3vh;
+}
+
+#container2 {
+    background-color: #f0f9f5;
+}
+
+#container2 p {
+    font-family: "Poppins";
+    font-size: 3.8vw;
+    line-height: 19px;
+    color: #6c6c6c;
+    padding: 3vh 0 6% 6%;
+    /* text-transform: uppercase; */
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+.innerContainer div {
+    /* padding: 0 10vw; */
+    width: 14%;
+    aspect-ratio: 1 / 2;
+    /* background: #83838a; */
+    background: #bababe;
+    border-radius: 19.8333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 3%;
+    position: relative;
+    color: white;
+}
+
+.innerContainer div:first-child {
+    margin-left: 0;
+}
+
+.innerContainer .selected {
+    color: white;
+    background: #7079b8;
+}
+
+.innerContainer .selected h1 {
+    color: white;
+}
+
+.innerContainer div i {
+    position: absolute;
+    top: 20%;
+    display: inline-block;
+    font-size: 5vw;
+}
+
+.innerContainer div h1 {
+    font-size: 3vw;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-weight: 700;
+}
+
+.bubuttonBtnContainer {
+    position: sticky;
+}
+
+.buttonContainer {
+    position: absolute;
+    bottom: 5%;
+    margin-left: 4vw;
+}
+
+.buttonContainer button {
+    width: calc((92vw - 3.5vw) / 2);
+    height: 10vw;
+    font-size: 4vw;
+}
+
+.buttonContainer button:nth-child(2) {
+    margin-left: 2vw;
+}
+/*  */
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 60%;
+    width: 88%;
+    /* transform: translate(0, -50%); */
+    left: 6%;
+    right: 0;
+    max-height: 20vh;
+    overflow: scroll;
+}
+
+#endPlaceautocomplete-list {
+    top: 85%;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+    /* color: #69bc8a; */
+}

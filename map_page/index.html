@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            #changeView {
+                position: absolute;
+                z-index: 20000000;
+                bottom: 4vh;
+                margin-right: 6vw;
+                right: 0;
+                border-radius: 0.5em;
+                width: 4em;
+                height: 4em;
+                background: #fff;
+                border: none;
+                box-shadow: 0em 0 0.4em 0 rgb(15 22 33 / 60%);
+                display: grid;
+                place-content: center;
+            }
+
+            #changeView i {
+                font-size: 1.7em;
+                opacity: 0.6;
+            }
+
+            .trans::before {
+                content: "";
+                position: relative;
+                top: 50%;
+                left: 50%;
+                /* transform: translate(-50%, -50%); */
+                background-color: white;
+                width: 500px;
+                height: 500px;
+                /* aspect-ratio: 1/1; */
+                z-index: 10000000;
+                /* transfo; */
+            }
+        </style>
+
+        <script
+            src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script
+            src="https://js.api.here.com/v3/3.1/mapsjs-core-legacy.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script
+            src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script
+            src="https://js.api.here.com/v3/3.1/mapsjs-service-legacy.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script
+            src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script
+            src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
+        />
+
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <script>
+            // document.body.style.transition = "10s";
+            // document.querySelector("canvas").style.transition = "10s";
+            // document.body.style.opacity = "0";
+            // document.querySelector("canvas").style.opacity = "0";
+
+            // setTimeout(() => {
+            //     document.body.style.opacity = "1";
+            //     document.querySelector("canvas").style.opacity = "1";
+            // }, 0);
+        </script>
+
+        <script defer src="./main.js"></script>
+    </head>
+    <body>
+        <div
+            id="mapContainer"
+            style="width: 100%; height: 100vh; background: #85a9b6"
+        ></div>
+
+        <button id="changeView" class="H_ctl">
+            <!-- <img src="route.jpg" alt="" /> -->
+            <i class="fas fa-vr-cardboard"></i>
+            <!-- <svg class="H_icon H_icon" viewBox="0 0 25 25">
+                <path
+                    d="M 18.5,11 H 14 V 6.5 c 0,-.8 -.7,-1.5 -1.5,-1.5 -.8,0 -1.5,.7
+            -1.5,1.5 V 11 H 6 .5 C 5.7,11 5,11.7 5,12.5 5,13.3 5.7,14
+            6.5,14 H 11 v 4.5 c 0,.8 .7,1.5 1.5,1.5 .8,0 1.5, -.7
+            1.5,-1.5 V 14 h 4.5 C 19.3,14 20,13.3 20,12.5 20,11.7 19.3,11
+            18.5,11"
+                />
+            </svg> -->
+        </button>
+    </body>
+</html>
+
+<!-- https://router.hereapi.com/v8/routes?transportmode=car&origin=52.5308,13.3847&destination=41.8845,-87.6386&apiKey=ykWuUVoGdx-KpKO4Yj2mIpl-DeLo34_rhPSXQC0Cm_g -->
