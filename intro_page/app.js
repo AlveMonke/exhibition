@@ -54,7 +54,12 @@ function createAutoComplete(ele, arr) {
         myLocation.addEventListener("click", function (e) {
             ele.value = this.getElementsByTagName("input")[0].value;
             closeAllLists();
+            if (ele.id == "startPlace")
+                fromLocation = ele.value.replaceAll(" ", "");
+            else if (ele.id == "endPlace")
+                toLocation = ele.value.replaceAll(" ", "");
         });
+
         a.appendChild(myLocation);
     }
 
