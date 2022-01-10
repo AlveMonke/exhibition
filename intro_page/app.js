@@ -156,6 +156,6 @@ function doneMove() {
             let link = document.createElement("a");
             link.href = "../map_page/index.html";
             link.click();
-        }, 20000);
+        }, 500);
     }
 }
