@@ -136,8 +136,6 @@ let routingParameters = {
     origin: localStorage.getItem("FromLocation"),
     destination: localStorage.getItem("ToLocation"),
     return: "polyline,turnByTurnActions,actions,instructions,travelSummary",
-    waypoint:
-        "[geo!][Type[,StopOverDuration]!]Position[;TransitRadius[;UserLabel[;Heading]]]",
 };
 
 router.calculateRoute(routingParameters, onResult, function (error) {
@@ -146,11 +144,11 @@ router.calculateRoute(routingParameters, onResult, function (error) {
 
 let changeView = document.querySelector("#changeView");
 
-changeView.onclick = () => {
-    if (!routeResult) return;
-    // localStorage.setItem("routeOutput", JSON.stringify(routeResult));
+// changeView.onclick = () => {
+//     if (!routeResult) return;
+//     // localStorage.setItem("routeOutput", JSON.stringify(routeResult));
 
-    let link = document.createElement("a");
-    link.href = "../ar.html";
-    link.click();
-};
+//     let link = document.createElement("a");
+//     link.href = "../ar.html";
+//     link.click();
+// };
